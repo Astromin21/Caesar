@@ -1,24 +1,29 @@
-function abfrageWort(){
+
+
+function abfrage(){
+    let text = "";
+    let nr = 0;
+    
     let wort = document.querySelector('#wort');
-    wort.addEventListener('change', function() {
-        text = wort.value;
-        test(text);        
+    wort.addEventListener('blur', function() {
+        text = wort.value; 
+        schlussel(text,0)  
     });
-}
 
-
-function abfrageZahl(){
     let zahl = document.querySelector('#zahl');
-    zahl.addEventListener('change', function(){
-        num = zahl.value;
-        test(num);
+    zahl.addEventListener('blur', function(){
+        nr = zahl.value;
+        schlussel(text, +nr);
     });
 }
-
-function test(hammer) {
-    console.log(hammer);
-
+function schlussel(text, nr) {
+    let ausgabe = document.querySelector('#ausgabe');
+    code = text.charCodeAt();
+    console.log(code);
+    ausgabe.innerHTML = text;
+    ergebnis = code + nr;
+    neu = String.fromCharCode(ergebnis)
+    ausgabe.innerHTML = neu;
 }
 
-abfrageWort()
-abfrageZahl()
+abfrage()
