@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.kopf {
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(97, 196, 299);
+}
