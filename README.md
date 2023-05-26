@@ -17,7 +17,24 @@ function abfrage()
 function schlussel()
 ```
 - übernimmt Parameter "text", "nr" aus abfrage()
-- wandelt text in Zeichencode um und speichert in var "code"
-- var "code" mit "nr" addiert und als var "ergebnis" gespeichert
-- ergebnis über .fromCharcode() in Buchstaben umgewandelt
-- Ausgabe per innerHtml
+- splitted var "text"
+
+
+```
+function umwandeln()
+```
+- wandelt Buchstaben mit Charcode() um
+- Inhalt des Array wird in numbers umgewandelt
+
+
+```
+function grossKlein
+```
+- erkennt ob eingegebener Buchstabe groß oder klein geschrieben ist
+- addiert den parameter "nr" aus Eingabefeld zahl hinzu
+
+
+```
+function rangeKlein(), rangeGross()
+```
+- überprüfen die Range der Buchstaben von a bis z und A bis Z
