@@ -13,7 +13,7 @@
 }
 
 main {
-    height: calc(100%);
+    height: calc(100vh - 150px);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -47,8 +47,8 @@ main {
 
 }
 .feld h2 {
-    margin-bottom: 15%;
-    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-top: 5%;
 }
 .wort {
     grid-area: b;
