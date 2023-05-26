@@ -2,17 +2,17 @@
 //-----------------------------Eventlisten---------------------------------
 function abfrage(){
     let text = "";
-    let nr = 0;
-    
+    let ausgabeZahl = 0;
     let wort = document.querySelector('#wort');
     let zahl = document.querySelector('#zahl');
     wort.addEventListener('blur', function() {
         text = wort.value;
         schlussel(text,0);
+        zahl.value = 0;
 
     })
-    zahl.addEventListener('blur', function(){
-        nr = zahl.value;
+    zahl.addEventListener('change', function(){
+        let nr = zahl.value;
         nr % 26 === 0 ? (nr = 26) : (nr = nr % 26)
         schlussel(text, +nr);
     })

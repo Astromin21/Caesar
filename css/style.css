@@ -1,35 +1,56 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .kopf {
+    display: flex;
     height: 100px;
     width: 100vw;
     background-color: rgb(238,17,17);
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
+main {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.links {
+    width: 30%;
+    background-image: url(../img/ryan-klaus-CKR2pwxbF_8-unsplash.jpg);
+    background-size: auto;
+    background-position: center;
+}
+
+
+
 .feld {
-    width: 60vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
+    height: calc(100vh - 100px);
+    width: 70%;
+    padding-right: 10%;
     background-color: rgb(224, 224, 224);
     display: grid;
     grid-template-areas: 
-    "b b f f"
-    "c c f f"
-    "d d d d"
-    ;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 2fr 2fr;
-    justify-items:  center;
+    "b b b "
+    "c c c "
+    "d d d ";
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 4fr;
+    justify-items: center;
     align-items: center;
     text-align: center;
 
 }
-
+.feld h2 {
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
 .wort {
     grid-area: b;
     
@@ -39,6 +60,11 @@
     height: 100px;
     margin: 20px;
     font-size: 2.5rem;
+    text-align: center;
+    border-radius: 15px;
+}
+#wort:hover{
+    background-color: rgba(238, 17, 17, 0.1);
 }
 
 .zahl {
@@ -50,16 +76,28 @@
     margin: 20px;
     font-size: 2.5rem;
     text-align: center;
+    border-radius: 15px;
+
+}
+#zahl:hover{
+    background-color: rgba(238, 17, 17, 0.1);
 }
 
 .ausgabe {
     grid-area: d;
-    width: 80%;
+    width: 60%;
+    
+    
 }
-#ausgabe {    
+#ausgabe {
     height: 100px;
-    width: 95%;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
     margin: 10px;
     font-size: 2.5rem;
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
