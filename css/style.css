@@ -49,6 +49,7 @@ main {
 .feld h2 {
     margin-bottom: 10%;
     margin-top: 5%;
+    font-size: 3em;
 }
 .wort {
     grid-area: b;
