@@ -40,14 +40,14 @@ main {
     "d d d ";
     
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     text-align: center;
 
 }
 .feld h2 {
-    margin-bottom: 10%;
+    margin-bottom: 2%;
     margin-top: 5%;
     font-size: 2.5em;
 }
@@ -86,7 +86,7 @@ main {
 .ausgabe {
     grid-area: d;
     width: 60%;
-    align-self: baseline;
+    align-self: center;
     
     
 }
